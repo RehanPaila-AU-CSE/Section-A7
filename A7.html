@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="A7.css" >
+</head>
+<body>
+    <body class="login-page">
+    <div class="login-box">
+        
+        <button class='glowing-btn'> 
+            <span class='glowing-txt'> 
+                A<span class='faulty-letter'>7 </span>SECTION
+            </span> 
+        </button>
+        <h3 class="heading-login-box">Account Login</h3>
+        <form>
+            <div class="user-box">
+                <input class="user-box-input" type="text" required>
+                <label class="user-box-label">Reg. No</label>
+            </div>
+            <div class="user-box">
+                <input class="user-box-input" type="password" id="password" required>
+                <label class="user-box-label">Password</label>
+            </div>
+            <div class="user-box">
+                <input type="checkbox" onclick="changeToText(this)">
+                <span style="color: whitesmoke; font-family: monospace;">Show Password</span>
+            </div>
+            
+            
+            <a type="submit" class="login-box-button" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+    <script>
+        function changeToText(elem){
+            if(elem.checked==true){
+                document.getElementById("password").type = "text";
+            }else{
+                document.getElementById("password").type = "password";
+            }
+            
+        }
+    </script>
+</body>
+</body>
+</html>
